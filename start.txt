@@ -10,3 +10,5 @@ in the simple change branch
 in real work branch
 
 adding a line for rebase example
+
+stash example
