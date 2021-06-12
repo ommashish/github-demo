@@ -1,0 +1,149 @@
+HEAD: Last commit
+rm -rf: "r" for recuresive walk the folder structure and "f" for force deletion
+
+
+
+
+to check the status:			:git status
+
+to add to stagging stage 		:git add <file name>
+
+to add all in the working stg		:git add .
+
+
+to recursively add changes and also
+update any file that have been rename,
+removed or deleted			:git add -A
+
+
+to update or remove previously tracked
+files from the entire working tree but
+will not add new files			:git add --update :/ 
+
+
+to commit 				:git commit -m 'your message' 
+
+to add and commit together 		:git commit -am 'your message'
+
+to create a new repository 		:git init
+
+to push to remote repository 		:git push origin main [git push 'remote_name' 'branch_name']
+
+to create a copy of remote repository 	:git clone https://github.com/<YourUserName>/demo
+
+to go to working or untracked stage 	:git reset HEAD level1.txt
+
+to go back to last commit 		:git checkout -- level1.txt
+
+to remove a file 			:git rm <file name>
+
+to restore file before commiting	:git restore --staged <file name>
+
+to get the log				: git log -- <file name>
+
+to create your alias command 		:git config --global alias.<alias name> "command you and to make alias of \"
+						example:- git config --global alias.hist "log --all  --graph --decorate --oneline"
+
+to get the config file 			:vi ~/.gitconfig
+
+to get the change in the repository 	:git diff
+
+to get the change for a specic file	:git diff -- <path of file>
+
+to check between commit points 		:git diff <commit_id1> <commit_id2>
+
+to check diff between local repository 
+and remote repository			:git diff main origin/main
+
+to check the branch 			:git branch -a
+
+to create a new branch			:git branch <branch name>
+
+to switch branch 			:git checkout <branch name>
+
+to create a new branch and switch 
+branch at the same time			:git checkout -b <branch name>
+
+to rename the branch			:git branch -m <old branch name> <new branch name> *m stands for move
+
+to delete the branch			:git branch -d <branch name> #you cant be on the branch you want to delete,you have to be in a different branch 	
+
+to switch branch 			:git checkout <branch name>
+
+to merge a branch with main		:git merge <branch name>	(fast forward)
+
+to merge a branch with main		:git merge <branch name> --no--ff
+
+to merge main with branch		:git rebase main
+
+to cancle rebase			:git rebase --abort
+
+to stash a file 			:git stash
+
+to stash untracked file 		:git stash -u
+
+to stach with a message			:git stash save "message "
+
+to locate a specifc stash 		:git stash show stash@{index no.}
+
+to get it out of stash 			:git stash apply  or git stash pop
+
+to take out a spefic stash		:git stash apply stash@{index no.}
+
+to see the stash 			: git stash list
+
+to drop a stash 			:git stash drop
+
+to clear multiple stash 		:git stash clear
+
+stasing in branch			:git stash branch <branch name> {all the stash will come to branch and the stash will be auto-drop
+
+to create a lightwight tag		:git tag  <tag name>
+
+to see all the tags			: git tag --list
+
+to see the commit at that tag		:git show <tag name>
+
+to delete a tag 			:git tag --delete <tag name>
+
+to annotate a tag			:git tag -a <annotaed tag name>
+
+to tag a specifc tag 			:git tag -a <annotaed tag name> <commit id>
+
+to update a tag in a different commit id:git tag -a <annotaed tag name> -f <commit id>
+
+to push tag in remote repository 	:git push origin <tag name>
+
+to push all tags at once 		:git push origin main --tags
+
+to delete a spefic tag in remote 
+repository 				:git push origin main :<tag name>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
